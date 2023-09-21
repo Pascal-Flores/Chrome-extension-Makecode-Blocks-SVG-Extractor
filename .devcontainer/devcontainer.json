@@ -1,0 +1,18 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "upgradePackages": true
+        }
+    },
+    "customizations": {
+        "vscode" : {
+            "extensions" : [
+                "github.copilot",
+                "hamza-aziane.obsidian-dark"
+            ]
+        }
+    }
+}

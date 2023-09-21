@@ -1,0 +1,32 @@
+{
+    "name" : "Makecode Block SVG Extractor",
+    "version" : "1.0",
+    "description" : "A tool to extract Makecode Blocks as SVGs",
+    "manifest_version" : 3,
+    "author" : "Pascal Flores",
+    "permissions": [
+        "webRequest",
+        "downloads",
+        "storage"
+    ],
+    "host_permissions" : [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["dist/content_script.js"]
+        }
+    ],
+    "icons" : {
+        "16": "assets/icons/16.png",
+        "32": "assets/icons/32.png",
+        "48": "assets/icons/48.png",
+        "128": "assets/icons/128.png"
+    },
+    "action": {
+        "default_popup": "assets/html/popup.html",
+        "default_title": "Tinkercad Circuits SVG Extractor"
+    }
+
+}
